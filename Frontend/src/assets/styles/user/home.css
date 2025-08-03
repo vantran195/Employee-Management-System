@@ -1,0 +1,95 @@
+.home{
+    display: block; /* Không chia màn hình nữa */
+}
+.side-bar{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    border-right: 1px solid gray;
+    background-color: #354052; 
+}
+.home-logo-image{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    opacity: 0.38;
+    width: 100%;
+}
+.side-bar-menu {
+    display: flex; /* Sử dụng Flexbox để hiển thị các mục trên cùng một hàng */
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng của danh sách */
+    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+    background-color: #f4f4f4; /* Màu nền (tuỳ chọn) */
+    border-radius: 5px; /* Bo góc (tuỳ chọn) */
+    overflow: hidden; /* Đảm bảo không có phần tử nào tràn ra ngoài */
+}
+
+.side-bar-menu li {
+    flex: 1; /* Chia đều không gian cho tất cả các mục */
+    text-align: center; /* Căn giữa nội dung bên trong */
+    padding: 10px 0; /* Khoảng cách bên trong mỗi mục */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền khi hover */
+}
+
+.side-bar-menu li:hover {
+    background-color: #ddd; /* Màu nền khi hover */
+}
+
+.side-bar-menu .menu-item-checked {
+    font-weight: bold; /* Làm đậm mục được chọn */
+    color: #007bff; /* Màu chữ của mục được chọn */
+    background-color: #e7f3ff; /* Màu nền của mục được chọn */
+    border-radius: 3px; /* Bo góc cho mục được chọn */
+}
+
+.side-bar-menu .item-link {
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: inherit; /* Kế thừa màu chữ từ cha */
+    display: block; /* Đảm bảo liên kết chiếm toàn bộ không gian của mục */
+    width: 100%; /* Đảm bảo liên kết chiếm toàn bộ chiều rộng */
+    height: 100%; /* Đảm bảo liên kết chiếm toàn bộ chiều cao */
+}
+.menu-item{
+    width: 100%;
+}
+.side-bar-menu .menu-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+.side-bar-menu .menu-item:hover {
+    background-color: #ddd;
+}
+.side-bar-menu .menu-item-checked {
+    font-weight: bold;
+    color: #007bff;
+    background-color: #e7f3ff;
+}
+.item-link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 650;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    gap: 10px;
+
+}
+.item-link:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.home-content{
+    padding: 10px;
+    position: relative;
+}
+.menu-item-checked .item-link{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}

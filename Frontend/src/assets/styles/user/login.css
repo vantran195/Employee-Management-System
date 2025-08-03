@@ -1,0 +1,230 @@
+.login-container {
+    /* display: flex; */
+    width: 100%;
+    height: 100vh;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+}
+
+.container-left {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-right {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 3;
+    width: 35%;
+    margin: auto;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.image__logo {
+    width: 150px;
+    height: 100px;
+}
+.image__logo-register {
+    width: 100px;
+    height: 80px;
+}
+.login-title{
+    text-align: center;
+}
+
+.form {
+    padding: 20px 75px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.login-title {
+    font-size: 21px;
+    margin-bottom: 21.5px;
+}
+
+.form-value {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.lb-content {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.ip-cen {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* background: #f2f3f5; */
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    /* Cách bên phải của textbox */
+    cursor: pointer;
+    font-size: 20px;
+    /* Điều chỉnh kích thước icon */
+    color: #aaa;
+    transition: color 0.3s;
+    margin-bottom: 20px;
+}
+
+.toggle-password:hover {
+    color: #000;
+}
+
+.inputcheck {
+    display: flex;
+    max-height: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Đổi màu nút Login */
+.btn-submit {
+    background-color: #354052; /* Màu nền của nút */
+    color: #ffffff; /* Màu chữ */
+    border: none; /* Loại bỏ viền */
+    border-radius: 4px; /* Bo góc nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+
+/* Hiệu ứng hover */
+.btn-submit:hover {
+    background-color: #2a333d; /* Màu nền khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.btn-submit:active {
+    transform: scale(0.90);
+}
+
+.btn-signin {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-signin a {
+    text-decoration: none;
+}
+
+.btn-signin a:active {
+    color: blue;
+}
+.reset-password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 213, 213, 0.514);
+    border-radius: 10px;
+    z-index: 3;
+    width: 35%;
+    margin: auto;
+    position: absolute;
+}
+.reset-password-button{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.btn-submit-reset{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #354052;
+    color: white;
+    border: none;
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-back{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(241, 189, 19);
+    color: white;
+    border: none;
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-back-login{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #354052;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.btn-back-login-click{
+    text-decoration: none;
+    color: white;
+}
+.error-message{
+    color: red;
+}
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
